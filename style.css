@@ -1,0 +1,31 @@
+body {
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+  padding-top: 70px;
+}
+header {
+  position: relative;
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgba(80, 80, 80, 0.5)), 
+              url("Imagen de WhatsApp 2025-01-29 a las 00.27.51_90c5d957.jpg") center/cover no-repeat;
+  color: rgb(255, 255, 255);
+  padding: 10rem 0 10rem 0;
+  text-align: center;
+}
+.foto-chica {
+    width: 500px;          /* Tamaño de la foto */
+    height: 500px;
+    object-fit: cover;     /* Recorta bien la imagen */
+    border-radius: 15%;    /* Hace la foto redonda */
+    border: 3px solid #0d6efd; /* Bordecito azul Bootstrap */
+}
+
+.proyecto img {
+  transition: transform 0.3s ease;
+}
+.proyecto img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  header { padding: 4rem 1rem; }
+}
